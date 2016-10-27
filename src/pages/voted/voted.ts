@@ -20,7 +20,7 @@ export class VotedPage {
 
   share() {
     var sharer = 'https://www.facebook.com/sharer/sharer.php?u=';
-    var app = 'https://sean-hill.github.io/trump-vs-hillary/www/';
+    var app = 'https://trump-vs-hilary.firebaseapp.com';
     var url = `${sharer}${app}`;
     window.open(url, 'pop', 'width=600, height=400, scrollbars=no');
   }

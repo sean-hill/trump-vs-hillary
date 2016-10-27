@@ -18,6 +18,13 @@ export class VotedPage {
     this.nominee = this.navParams.get('nominee');
   }
 
+  share() {
+    var sharer = 'https://www.facebook.com/sharer/sharer.php?u=';
+    var app = 'https://sean-hill.github.io/trump-vs-hillary/www/';
+    var url = `${sharer}${app}`;
+    window.open(url, 'pop', 'width=600, height=400, scrollbars=no');
+  }
+
   revote() {
     Promise.all([
       this.storage.remove('voted'),

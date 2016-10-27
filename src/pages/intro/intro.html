@@ -1,0 +1,13 @@
+<ion-content page-intro>
+  <div class="bg-gradient"></div>
+  <div class="hero">
+    <div>
+      <h1>Hillary vs. Trump</h1>
+      <h3>Whose gonna win?</h3>
+      <button ion-button color="light" round large (click)="startVoting()" [ngClass]="{ 'animated tada': loading }">
+        <span *ngIf="!loading">Vote now</span>
+        <ion-spinner *ngIf="loading"></ion-spinner>
+      </button>
+    </div>
+  </div>
+</ion-content>

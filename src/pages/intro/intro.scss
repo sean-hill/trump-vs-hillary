@@ -1,0 +1,15 @@
+page-intro {
+
+  .bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(-45deg,  #14018a 0%, #e92e0a 100%);
+    background: -webkit-linear-gradient(-45deg,  #14018a 0%,#e92e0a 100%);
+    background: linear-gradient(135deg,  #14018a 0%,#e92e0a 100%);
+    z-index: 0;
+  }
+
+}

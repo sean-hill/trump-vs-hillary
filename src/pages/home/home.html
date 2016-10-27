@@ -1,0 +1,17 @@
+<ion-content page-home>
+    <div class="nominee" *ngFor="let nominee of nominees | async" [ngStyle]="{'background-image':'url(' + nominee.image + ')'}">
+      <div class="background"></div>
+      <div class="votes">
+        <h1><ion-icon name="add"></ion-icon> {{ nominee.upvotes }}</h1>
+        <button
+          ion-button
+          round
+          large
+          (click)="upvote(nominee)"
+          [ngClass]="{'animated tada': nominee.voted }"
+          [ngStyle]="{'background-color': nominee.color}">
+          Vote {{ nominee.name.last }}
+        </button>
+      </div>
+    </div>
+</ion-content>

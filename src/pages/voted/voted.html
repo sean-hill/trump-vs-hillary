@@ -1,0 +1,15 @@
+<ion-content page-voted [ngStyle]="{ 'background': nominee.color }">
+  <div class="hero">
+    <div>
+      <h3>Your vote</h3>
+      <h1>{{ nominee.name.first }} {{ nominee.name.last }}</h1>
+      <button ion-button color="light" large round icon-left (click)="share()" class="animated pulse infinite">
+        <ion-icon name="share"></ion-icon>
+        Share
+      </button>
+      <br>
+      <br>
+      <button ion-button color="light" clear small (click)="revote()">Revote</button>
+    </div>
+  </div>
+</ion-content>

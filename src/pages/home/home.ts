@@ -11,7 +11,6 @@ import { Storage } from '@ionic/storage';
 })
 export class HomePage {
 
-  hasUpvoted: Boolean = false;
   nominees: FirebaseListObservable<any>;
 
   constructor(
@@ -41,10 +40,6 @@ export class HomePage {
         }
       });
     }
-  }
-
-  trackByNominee(index, nominee) {
-    return nominee.$key;
   }
 
   getNominees() {

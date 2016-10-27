@@ -1,5 +1,5 @@
 <ion-content page-home>
-    <div class="nominee" *ngFor="let nominee of nominees | async" [ngStyle]="{'background-image':'url(' + nominee.image + ')'}">
+    <div class="nominee" *ngFor="let nominee of nominees | async; trackBy: nominee?.$key" [ngStyle]="{'background-image':'url(' + nominee.image + ')'}">
       <div class="background"></div>
       <div class="votes">
         <h1><ion-icon name="add"></ion-icon> {{ nominee.upvotes }}</h1>
